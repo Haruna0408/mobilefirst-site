@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モバイルファーストサイト</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+<body>
+    <div class="l-wrapper">
+        <div class="l-bg-container">
+
+            <div class="l-gnav" role="navigation">
+                <nav class="gnav-wrap">
+                    <ul class="gnav-list">
+                        <li class="gnav-item js-open-trigger"><a href="#sec01">Section1</a></li>
+                        <li class="gnav-item js-open-trigger"><a href="#sec02">Section2</a></li>
+                        <li class="gnav-item js-open-trigger"><a href="#sec03">Section3</a></li>
+                        <li class="gnav-item js-open-trigger"><a href="#sec04">Section4</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- .l-gnav /-->
+
+            <div class="l-contents">
+                <header id="header" class="l-header js-headerTop">
+                    <button
+                        type="button"
+                        class="p-hamburger p-hamburger__button"
+                        aria-controls="global-nav"
+                        aria-expanded="false">
+                        <span class="p-hamburger__line one"></span>
+                        <span class="p-hamburger__line two"></span>
+                        <span class="p-hamburger__line three"></span>
+                        <span class="p-hamburger__text"></span>
+                    </button>
+                </header>
+
+                <main class="l-main" role="main">
+                    <div class="l-article">
+                        <div class="mv">
+                            <h1 class="copy">
+                                サイトのメインタイトル・コピー
+                            </h1>
+                        </div>
+
+                        <section class="section js-anchor" id="sec01">
+                            <h2 class="heading">Section1</h2>
+                            <p class="lead">ここは1番目のコンテンツです。</p>
+                        </section>
+
+                        <section class="section js-anchor" id="sec02">
+                            <h2 class="heading">Section2</h2>
+                             <p class="lead">ここは2番目のコンテンツです。</p>
+                        </section>
+
+                        <section class="section js-anchor" id="sec03">
+                            <h2 class="heading">Section3</h2>
+                             <p class="lead">ここは3番目のコンテンツです。</p>
+
+                             <div class="filter-wrap">
+                                <ul class="filter-list js-filter-list">
+                                    <li data-filter="all" class="is-active"><span>すべて</span></li>
+                                    <li data-filter="category01"><span>カテゴリ01</span></li>
+                                    <li data-filter="category02"><span>カテゴリ02</span></li>
+                                    <li data-filter="category03"><span>カテゴリ03</span></li>
+                                  </ul>
+                                  <ul class="filter-item-list js-filter-item-list">
+                                    <li data-item="category01">カテゴリ1のアイテム</li>
+                                    <li data-item="category02">カテゴリ02のアイテム</li>
+                                    <li data-item="category02">カテゴリ03のアイテム</li>
+                                    <li data-item="category03">カテゴリ03のアイテム</li>
+                                    <li data-item="category01">カテゴリ01のアイテム</li>
+                                    <li data-item="category03">カテゴリ02のアイテム</li>
+                                    <li data-item="category02">カテゴリ02のアイテム</li>
+                                    <li data-item="category03">カテゴリ03のアイテム</li>
+                                  </ul>
+                             </div>
+                        </section>
+
+                        <section class="section js-anchor" id="sec04">
+                            <h2 class="heading">Section4</h2>
+                            <p class="lead">ここは4番目のコンテンツです。</p>
+                        </section>
+                    </div><!--.l-article /-->
+
+                </main><!-- .l-main /-->
+
+                <!-- <aside class="l-aside">
+                </aside> -->
+
+                <footer id="footer" class="l-footer">
+                    <p>フッターです</p>
+                </footer>
+            </div><!-- .l-contents /-->
+
+
+            <!--// Background Setttings -->
+            <!-- Background Setttings //-->
+
+        </div><!-- .l-bg-container //-->
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
